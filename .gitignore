@@ -1,6 +1,6 @@
 # Rust specific
 /target
-Demos
+locals
 
 # DOCS
 *.bkp
