@@ -1,6 +1,7 @@
 # Rust specific
 /target
-locals
+/locals
+*.lock
 
 # DOCS
 *.bkp
