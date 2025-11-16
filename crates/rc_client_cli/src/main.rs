@@ -1,20 +1,9 @@
-// Убрать после того как проект стабилизируется
 #![allow(unused)]
 #![allow(dead_code)]
+pub mod cfg;
+// Убрать после того как проект стабилизируется
 
-#[derive(Default)]
-pub struct Config{
-  pub host: String,
-  pub token: String,
-  pub username: String, 
-  pub password: String
-}
-
-impl Config {
-  pub fn assign(&mut self, cfg:&Config) -> Config {
-    Config::default()
-  }
-}
+pub use cfg::Cofnig;
 
 fn main() {
   let mut cli_cfg = parse_cli_configuration();
